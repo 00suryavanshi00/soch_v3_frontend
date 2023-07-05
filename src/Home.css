@@ -1,0 +1,27 @@
+.stor-but{
+    text-decoration: none;
+    margin-top: 5vh;
+    background-color: rgba(252, 166, 97, 1);
+    color: black;
+    font-size: 600px;
+    padding:3vh ;
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+.stor-but:hover{
+  background-color: rgb(101, 137, 237);
+  color: white;
+}
+
+.stor-but:active {
+
+background-color:rgb(171, 227, 171);
+
+}

@@ -1,0 +1,45 @@
+.dp{
+    /* background: url(../images/dp.jpeg); */
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3rKS0ek_6yIgpsOw9iStakfvYPoYLtfz-mw&usqp=CAU");
+    background-size: 100% 100%;
+    width: 100px;
+    height: 100px;
+    display:flex;
+    margin-top: 4vh;
+    margin-left: 3vh;
+    border-radius: 1.6vh;
+}
+
+.greeting{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.greet {
+    margin-left: 2vh;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: "Montserrat",sans-serif ;
+}
+
+.weather {
+    /* float: right; */
+    margin-right: -40vh;
+    width: 90px;
+    height: 90px;
+    margin-left: 10px;
+    display: flex;
+    position:relative ;
+    left: 80px;
+    /* justify-content: right;
+    align-items: right; */
+    
+}
+
+.pick{
+    margin-top: 7vh;
+    margin-left: 3vh;
+    font-size: large;
+    color: rgb(255, 156, 7);
+}

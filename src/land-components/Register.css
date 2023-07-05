@@ -1,0 +1,137 @@
+
+.auth-form, .reg-form {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  text-align: left; */
+
+}
+
+ .flex-container{
+  display:flex;
+  align-items: flex-start;
+  /* justify-content:space-between; */
+ /* flex-wrap: wrap; */
+  text-align: center;
+  display:flex ;
+  min-height: 100vh; 
+  /* justify-content: space-between; */
+  /* align-items:flex-start; */
+  /* justify-content: right; */
+  /* background-image: linear-gradient(79deg, rgb(241, 238, 224),rgb(121, 201, 238),rgb(255, 171, 102)); */
+  background-color: rgba(252, 212, 98, 1); 
+  padding-top: 8vh;
+  padding-right: 7vh;
+  margin-top: -5vh;
+ }
+
+
+
+.bg{
+  background-image: url(../images/land1.png);
+  background-size: 100% 100%;
+  justify-content: left;
+  align-items: left;
+  margin-right: 10vh;
+  /* margin-left: 8vh; */
+  width: 660px;
+  height: 1100px;
+  margin-top: -5vh;
+  margin-left: -2vh;
+  background-size: cover;
+}
+
+/* .bg-ec {
+  background-image: url(../images/land1.png);
+  justify-content: center;
+  align-items: left;
+  margin-left: 20vh;
+  width: 600px;
+  height: 600px;
+  background-size: cover;
+} */
+
+.errormsg{
+  color: red;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 4vh;
+  font-weight: 600;
+}
+
+
+
+.title{
+    text-align: left;
+    /* padding: 1rem 0; */
+    margin-top: 1vh;
+    /* font-weight:bold; */
+    /* font-size: 50px; */
+    /* color: white; */
+    margin-bottom: -2vh;
+    
+}
+
+.tagline{
+    padding-bottom: 3vh;
+}
+
+
+label{
+  text-align: left;
+  padding: 0rem 0;
+  margin-top: 1vh;
+  font-weight: 600;
+}
+
+
+input {
+  margin: 1rem 0;
+  padding: 1rem;
+  /* padding-right: 20vh; */
+  border: none;
+  border-radius: 10px;
+  /* margin-right: 10vh; */
+}
+
+button {
+  border: none;
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+
+}
+
+.link-but {
+    text-decoration: none;
+    margin-top: 5vh;
+    background-color: rgba(252, 166, 97, 1);
+    color: black;
+    /* font-size: large; */
+    padding:3vh ;
+    font-size: 25px;
+    /* font-weight: 600; */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.link-but:hover{
+  background-color: rgb(101, 137, 237);
+  color: white;
+}
+
+.link-but:active {
+
+background-color:rgb(171, 227, 171);
+
+}
+
+.login-link {
+  background: none;
+  color: purple;
+  text-decoration: underline;
+  font-weight: 600;
+  
+}

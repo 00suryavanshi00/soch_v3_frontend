@@ -1,0 +1,240 @@
+.aiish--head{
+    text-decoration: none;
+    margin-top: 5vh;
+    color: rgba(252, 166, 97, 1);
+   
+    font-size: 600px;
+    padding:1vh ;
+    padding-left:6vh;
+    font-size: 40px;
+    font-weight: 6000;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.aiish_head{
+    color: black;
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-left:10vh;
+    font-weight: 800px;
+}
+
+.loc{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+
+
+p{
+    color: rgb(47, 44, 44);
+    font-size: 20px;
+    padding: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-weight: 600;;
+}
+
+.aiish-1{
+    background-image: url("https://www.aiishmysore.in/storage/files/about-us-images-1.png");
+    background-size: 10% 10%;
+    margin-top: 8vh;
+    margin-left: 29vh; 
+    width: 900px;
+    height: 500px; 
+    background-size: cover;
+}
+
+.cont{
+    background-color: rgba(252, 166, 97, 1);
+    box-sizing: content-box;
+    margin-top: 20vh;
+    /* margin-left: 5vh; */
+    height: 300px;
+    width: 50%;
+    /* border-radius: 10px; */
+}
+
+.aiish-bg{
+    background-image: url("../images/us-nobg.png");
+    /* background-image: url("../images/us.jpeg"); */
+    background-size: 10% 10%;
+    margin-top: -3\4vh;
+    margin-left: -9vh; 
+    width: 1000px;
+    height: 500px; 
+    background-size: cover;
+    
+    /* display: flex;
+    justify-content: left;
+    align-items: start;
+    float: left; */
+}
+
+.row{
+    margin-top: 10vh;
+}
+
+.column{
+    width:50%;
+    margin-left: 30vh;
+    margin-top: 10vh;
+    color: rgba(252, 166, 97, 1);
+    text-align: center;
+    font-size: 60px;
+    font-weight: 6000;
+}
+
+.p-us{
+    margin-left: 25vh;
+}
+
+.moto{
+    color: rgba(252, 166, 97, 1);
+}
+
+.guides{
+    margin-top: 25vh;
+    display: flex;
+    justify-content: center;
+    font-weight: 600px;
+    font-size: 40px;
+
+}
+
+.column-2{
+    margin-left: 100px;
+    margin-right: 80px;
+}
+
+.dp-1{
+    background-image: url("https://media.licdn.com/dms/image/C5603AQHuCVC0D8KpgQ/profile-displayphoto-shrink_800_800/0/1517069060224?e=2147483647&v=beta&t=r0IeasDNioTi_-A6qVtZESdNpTYIUGEKZ8C4SAOI0G4");
+    background-size: 50% 50%;
+    margin-top: 10vh;
+    /* margin-left: -9vh;  */
+    width: 150px;
+    height: 150px; 
+    background-size: cover;
+    border-radius: 90px;
+    
+}
+
+.dp-2{
+    background-image: url("https://www.aiishmysore.in/storage/files/1-electronics.jpg");
+    background-size: 50% 50%;
+    margin-top: 10vh;
+    margin-left: 3vh; 
+    width: 150px;
+    height: 150px; 
+    background-size: cover;
+    border-radius: 90px;
+}
+
+.dp-3{
+    background-image: url("https://vvce.ac.in/wp-content/uploads/2020/01/Dr.-Ravikumar-CS-300x300.jpg");
+    background-size: 50% 50%;
+    margin-top: 10vh;
+    margin-left: 12vh; 
+    width: 150px;
+    height: 150px; 
+    background-size: cover;
+    border-radius: 90px;
+}
+
+.names{
+    font-size: 20px;
+}
+
+.names-3{
+    margin-left: 11vh; 
+}
+.ravi{
+    margin-left: 11vh; 
+}
+
+.cnt-head{
+    color: rgba(252, 166, 97, 1);
+    margin-top: 25vh;
+    display: flex;
+    justify-content: center;
+    font-weight: 600px;
+    font-size: 40px;
+}
+
+.cnt-box{
+    background-color: rgb(191, 111, 45);
+    box-sizing: content-box;
+    margin-top: 5vh;
+    /* margin-left: 5vh; */
+    height: 600px;
+    width: 100%;
+}
+
+
+.dp-s1{
+    background-image: url("https://media.licdn.com/dms/image/C4D03AQGVe29TtT0yxw/profile-displayphoto-shrink_800_800/0/1654144769044?e=2147483647&v=beta&t=wV3uReGk9MyYNR5cCFuIWJtBEnf30bld8CycQcuzljU");
+    background-size: 50% 50%;
+    margin-top: 10vh;
+    /* margin-left: 12vh;  */
+    width: 150px;
+    height: 150px; 
+    background-size: cover;
+    border-radius: 90px;
+}
+
+.dp-s2{
+    background-image: url("https://media.licdn.com/dms/image/D5603AQGA_910-5l-jw/profile-displayphoto-shrink_800_800/0/1686807617308?e=2147483647&v=beta&t=_zOK0r2xC7PKxdj5Il3QLkthqJcS2WhKrThtglMhvpY");
+    background-size: 50% 50%;
+    margin-top: 10vh;
+    /* margin-left: 12vh;  */
+    width: 150px;
+    height: 150px; 
+    background-size: cover;
+    border-radius: 90px;
+}
+
+.dp-v3{
+    background-image: url("../images/vib.jpg");
+    background-size: 50% 50%;
+    margin-top: 10vh;
+    /* margin-left: 12vh;  */
+    width: 150px;
+    height: 150px; 
+    background-size: cover;
+    border-radius: 90px;
+}
+
+.dp-s4{
+    background-image: url("../images/sanki.jpg");
+    background-size: 50% 50%;
+    margin-top: 10vh;
+    /* margin-right: 600vh;  */
+    width: 150px;
+    height: 150px; 
+    background-size: cover;
+    border-radius: 90px;
+}
+
+
+.names-us{
+    /* margin-top: -1vh; */
+    color: whitesmoke;
+}
+
+h5{
+    /* margin-top: -3vh; */
+    color: aliceblue;
+}
+
+
+.cnt{
+    margin-top: -10vh;
+}

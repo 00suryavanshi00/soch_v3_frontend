@@ -16,6 +16,7 @@ function Dalle () {
   const configuration = new Configuration({
     // apiKey: process.env.REACT_APP_API_KEY,
     apiKey: "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"
+    //this needs to be changed
     // organization: "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"
   })
 

@@ -19,7 +19,7 @@
     border-radius: 5px;
     cursor: pointer;
     align-items: center;
-    
+         
     
 }
 .save-but:hover{
@@ -31,4 +31,12 @@
 
 background-color:rgb(171, 227, 171);
 
+}
+
+.stage{
+  /* width: 60% ;
+  height:50%; */
+  width: 880px;
+  height: 600px;
+  margin: 10px 0px 10px 300px ;
 }

@@ -21,6 +21,7 @@ import CleverRab from './components/CleverRab';
 import TalkativeTur from './components/TalkativeTur';
 import BearMen from './components/BearMen';
 import TYourself from './components/TYourself';
+import { StoryBuilder } from './pages/storybuilder';
 
 
 
@@ -42,6 +43,7 @@ function App() {
           <Route path="/kon4" element={<TryA/>}/>
           <Route path="/kon5" element={<TalkativeTur/>}/>
           <Route path="/kon6" element={<BearMen/>}/>
+          <Route path="/storyBuilder" element={<StoryBuilder/>}/>
           
         </Routes>
       </Router>

@@ -85,7 +85,7 @@ function Home(props) {
         />
          */}
       </div> 
-      <Link className="stor-but" to="/tys" >Try Yourself</Link>
+      <Link className="stor-but" to="/storyBuilder" >Try Yourself</Link>
     
     </div>
   </>

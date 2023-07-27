@@ -1,0 +1,34 @@
+.scroll-box {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .scroll-box__wrapper {
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: scroll;
+   -ms-overflow-style: none; /* IE */
+    overflow: -moz-scrollbars-none; /* Firefox */
+  }
+  
+  .scroll-box__wrapper::-webkit-scrollbar {
+     display: none; /* Chrome and Safari */
+   }
+  
+  .scroll-box__container {
+    height: 100%;
+    display: inline-flex;
+  }
+
+  .stickers{
+    height:5%;
+    width: 5%;
+  }
+
+  .selected{
+    border: 2px solid red;
+  }
+
+ 

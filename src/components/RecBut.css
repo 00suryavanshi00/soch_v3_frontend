@@ -1,0 +1,25 @@
+.rec-but{
+    justify-content: center; 
+    border-color: black;
+    padding: 10px 60px;
+    border-radius: 5px;
+    margin-top: 50px ;
+    margin-right: 50px;
+    margin-left: 300px;
+    cursor: pointer;
+    background-color: orange;
+
+}
+
+.rec-but:hover{
+  background-color: rgb(101, 137, 237);
+  color: white;
+}
+
+.vid{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 350px;
+}

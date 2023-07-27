@@ -15,7 +15,7 @@ function Dalle () {
 
   const configuration = new Configuration({
     // apiKey: process.env.REACT_APP_API_KEY,
-    apiKey: "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"
+    apiKey: "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"
     // organization: "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"
   })
 
@@ -25,7 +25,7 @@ function Dalle () {
     const res = await openai.createImage({
       prompt: prompt,
       n: 4,
-      size : "512x512"
+      size : "1024x1024"
     })
     setResult(res.data.data[0].url)
     for (let i = 0 ; i<res.data.length ; i++){
@@ -41,7 +41,7 @@ function Dalle () {
       
      
       <textarea className='inp' placeholder='lets generate AI'
-        onChange={(e) => setPrompt(e.target.value)}
+        onChange={(e) => setPrompt(e.target.value)}U can 
       />
 
       <button className='btt' onClick={generateImage}>Generate an Image</button>

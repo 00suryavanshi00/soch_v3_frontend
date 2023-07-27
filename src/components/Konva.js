@@ -3,19 +3,8 @@ import { createRoot } from "react-dom/client";
 import { Stage, Layer, Image, Transformer } from "react-konva";
 import useImage from "use-image";
 import './Konva.css'
-import Navbar from './Navbar';
-// import Canvas from './Canvas'
-// import SignaturePad from 'react-signature-canvas'
+import RecBut from './RecordingButtons';
 
-
-// function downloadURI(uri, name) {
-//   var link = document.createElement('a');
-//   link.download = name;
-//   link.href = uri;
-//   document.body.appendChild(link);
-//   link.click();
-//   document.body.removeChild(link);
-// }
 
 const URLImage = ({ image,shapeProps, isSelected,onSelect,onChange}) => {
   const [img] = useImage(image.src);
@@ -48,7 +37,6 @@ const URLImage = ({ image,shapeProps, isSelected,onSelect,onChange}) => {
             ref={shapeRef}
             
             {...shapeProps}
-            draggable
             onDragEnd={(e) => {
                 onChange({
                     ...shapeProps,
@@ -97,7 +85,7 @@ const URLImage = ({ image,shapeProps, isSelected,onSelect,onChange}) => {
   );
 };
 
-const Konva = () => {
+const Konva = ({ propArray, selectedImage }) => {
   const dragUrl = React.useRef();
   const stageRef = React.useRef();
   const [images, setImages] = React.useState([]);
@@ -123,7 +111,7 @@ const Konva = () => {
     }
   };
 
-
+//saving the canvas as an image
   const saveImageToLocal = (event) => {
     let link = event.currentTarget;
     link.setAttribute('download','canvas.png');
@@ -136,75 +124,36 @@ const Konva = () => {
   return (
     
     <div>
-      
+
       <h3 className='compname'>Components for Your 
       Story</h3>
       
       <br />
 
+      <img src={selectedImage}
+                      draggable="true"
+                      onDragStart={(e) => {
+                      dragUrl.current = e.target.src;
+                      }}
+      />
+
+      {
+        propArray?.map((arrayElement)=>{
+          return (
             <img
             width={200}
-                alt="sky"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Color_icon_Light_Cornflower_blue.svg/1024px-Color_icon_Light_Cornflower_blue.svg.png"
+                src= {arrayElement}
                 draggable="true"
                 onDragStart={(e) => {
                 dragUrl.current = e.target.src;
                 }}
             />
+          )
+        })
+      }
 
 
-            <img
-            width={200}
-                alt="crow"
-                src="https://media.giphy.com/media/u2R5zbiw4V7niu7z1r/giphy.gif"
-                draggable="true"
-                onDragStart={(e) => {
-                dragUrl.current = e.target.src;
-                }}
-            />
-        
-        
-            <img
-            width={200}
-                alt="tree"
-                src="https://media.giphy.com/media/Me15dPbub4gXFVlrky/giphy.gif"
-                draggable="true"
-                onDragStart={(e) => {
-                dragUrl.current = e.target.src;
-                }}
-            /> 
-
-            <img
-            width={100}
-                alt="pot"
-                src="https://media.giphy.com/media/tkJo9hedswdDMk7AVI/giphy.gif"
-                draggable="true"
-                onDragStart={(e) => {
-                dragUrl.current = e.target.src;
-                }}
-            /> 
-
-            <img
-            width={200}
-                alt="clouds"
-                src="https://media.giphy.com/media/dByKTOKy3msWmAx2V4/giphy.gif"
-                draggable="true"
-                onDragStart={(e) => {
-                dragUrl.current = e.target.src;
-                }}
-            /> 
-
-            <img
-            width={200}
-                alt="one_pebbles"
-                src="https://www.pngall.com/wp-content/uploads/2017/03/Pebble-Stone-Download-PNG.png"
-                draggable="true"
-                onDragStart={(e) => {
-                dragUrl.current = e.target.src;
-                }}
-            /> 
-
-            <p>There was a Thirsty crow flying in the sky in search of water, it saw a pot of water. It thought to throw the pebbles in it to make the water come on top. Thus drink Water and quench its Thirst</p>
+          
     
       <div
         onDrop={(e) => {
@@ -220,16 +169,17 @@ const Konva = () => {
               }
             ])
           );
+          console.log(`this is the onDrop event ${images}`)
         }}
         onDragOver={(e) => e.preventDefault()}
       >
       
-        <Stage
-          width={window.innerWidth}
-          height={window.innerHeight}
+        <Stage className='stage'
+          width={880}
+          height={600}
           onMouseDown={checkDeselect}
           onTouchStart={checkDeselect}
-          style={{ border: "2px solid grey" }}
+          style={{ border: "2px solid grey"}}
           ref={stageRef}
         >
           <Layer>
@@ -248,6 +198,7 @@ const Konva = () => {
                         const imgs = images.slice();
                         imgs[i] = newAttrs;
                         setImages(imgs);
+                        console.log(`this is the images array > ${images}`)
                     }}
 
                />
@@ -255,6 +206,7 @@ const Konva = () => {
             })}
           </Layer>
         </Stage>
+        <RecBut/>
         {/* <button className='save-but' >Save</button> */}
         <a className='save-but' href='try'>Save your Imagination</a>
       </div>        

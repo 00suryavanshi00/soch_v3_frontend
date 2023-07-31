@@ -31,7 +31,7 @@ import Profile from './components/Profile';
 function App() {
   return (
     <div className="App">
-      <Router>
+      {/* <Router> */}
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path ="/land" element={<Land/>}/>
@@ -51,7 +51,7 @@ function App() {
           <Route path='/prof' element={<Profile/>}/>
           
         </Routes>
-      </Router>
+      {/* </Router> */}
       
      
     

@@ -2,6 +2,7 @@ import ReactGiphySearchBox from 'react-giphy-searchbox-techedge'
 import axios from 'axios';
 import { useCallback, useState } from 'react';
 import './giphy.css'
+import './DalleResule.css'
 
 export function GIPHY({ onSelectedStickersChange }){
 
@@ -75,8 +76,8 @@ export function GIPHY({ onSelectedStickersChange }){
     return (
         <div>
             <form onSubmit={onSubmit}>
-        <input type="text" value={searchedTerm} onChange={handleChange} />
-        <button type="submit">Search</button>
+        <input type="text" placeholder='Main Characters 😎' value={searchedTerm} onChange={handleChange} />
+        <button className='but' type="Generate">Generate</button>
       </form>
       <div className='scroll-box'>
         <div className='scroll-box__wrapper'>

@@ -97,7 +97,7 @@ const URLImage = ({ image,shapeProps, isSelected,onSelect,onChange}) => {
   );
 };
 
-const TryA = () => {
+const CrocRab = () => {
   const dragUrl = React.useRef();
   const stageRef = React.useRef();
   const [images, setImages] = React.useState([]);
@@ -272,9 +272,9 @@ const TryA = () => {
 //         false
 //       );
 const root = createRoot(container);
-root.render(<TryA />);
+root.render(<CrocRab />);
 
 
 
 
-export default TryA;
+export default CrocRab;

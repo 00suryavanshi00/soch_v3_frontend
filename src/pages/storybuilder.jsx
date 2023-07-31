@@ -6,6 +6,7 @@ import { GIPHY } from '../components/giphy';
 import DragDropCanvas from '../components/canvas';
 import Konva from '../components/Konva';
 import ThirstyC from '../components/testarray';
+import './storybuilder.css'
 
 // import DropDownMenu from 'react-bootstrap/esm/DropDownMenu'
 

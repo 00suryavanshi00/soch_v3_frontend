@@ -29,7 +29,7 @@ import CrocRab from './components/CrocRab';
 function App() {
   return (
     <div className="App">
-      <Router>
+      {/* <Router> */}
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path ="/land" element={<Land/>}/>
@@ -47,7 +47,7 @@ function App() {
           <Route path="/storyBuilder" element={<StoryBuilder/>}/>
           
         </Routes>
-      </Router>
+      {/* </Router> */}
       
      
     

@@ -1,8 +1,10 @@
 import React from 'react'
 import { createRoot } from "react-dom/client";
 import { Stage, Layer, Image, Transformer } from "react-konva";
+import {BrowserRouter as Router} from 'react-router-dom';
 import useImage from "use-image";
 import './Konva.css'
+import Navbar from './Navbar';
 
 // import Canvas from './Canvas'
 // import SignaturePad from 'react-signature-canvas'
@@ -48,7 +50,6 @@ const URLImage = ({ image,shapeProps, isSelected,onSelect,onChange}) => {
             ref={shapeRef}
             
             {...shapeProps}
-            draggable
             onDragEnd={(e) => {
                 onChange({
                     ...shapeProps,
@@ -135,6 +136,8 @@ const TurtnRab = () => {
 
   return (
     <div>
+      
+      <Navbar/>
       
       <h3 className='compname'>Components for Your Story</h3>
       <br />
@@ -252,7 +255,7 @@ const TurtnRab = () => {
         </Stage>
         {/* <button className='save-but' >Save</button> */}
         <a className='save-but' href='try'>Save Your Imagination</a>
-      </div>        
+      </div>      
     </div>
 
   );
@@ -272,7 +275,9 @@ const TurtnRab = () => {
 //         false
 //       );
 const root = createRoot(container);
-root.render(<TurtnRab />);
+root.render(<Router>
+  <TurtnRab />
+  </Router>);
 
 
 

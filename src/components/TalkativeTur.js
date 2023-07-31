@@ -3,6 +3,8 @@ import { createRoot } from "react-dom/client";
 import { Stage, Layer, Image, Transformer } from "react-konva";
 import useImage from "use-image";
 import './Konva.css'
+import Navbar from './Navbar';
+import RecBut from './RecordingButtons';
 
 // import Canvas from './Canvas'
 // import SignaturePad from 'react-signature-canvas'
@@ -219,18 +221,20 @@ const TalkativeTur = () => {
         }}
         onDragOver={(e) => e.preventDefault()}
       >
-      
-        <Stage
-          width={window.innerWidth}
-          height={window.innerHeight}
+        
+        <Stage className='stage'
+          height={600}
+          width={880}
           onMouseDown={checkDeselect}
           onTouchStart={checkDeselect}
           style={{ border: "2px solid grey" }}
           ref={stageRef}
         >
           <Layer>
+            
             {images.map((image,i) => {
               return (
+                
                 <URLImage
                     key={i}
                     image={image} 
@@ -250,6 +254,8 @@ const TalkativeTur = () => {
             })}
           </Layer>
         </Stage>
+        <RecBut/>
+        {/* <Navbar/> */}
         {/* <button className='save-but' >Save</button> */}
         <a className='save-but' href='try'>Save Your Imagination</a>
       </div>        

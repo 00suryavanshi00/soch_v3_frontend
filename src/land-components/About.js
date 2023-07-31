@@ -33,7 +33,7 @@ function About() {
                 <p className='p-us'> Students of Vidya Vardhaka College of Engineering. <br/><br/>
                 We, Final Year BTech Students with the moto of helping the Children who can Dream but cant Describe came up with SOCH
                 <br/> <br/>
-                The main Goal of SOCH is to convert <h3 className='moto'>Imagination to Animation</h3>
+                The main Goal of SOCH is to convert <h3 className='moto'>Imagination to <br/> Vision</h3>
 
                 </p>
             </div>
@@ -94,7 +94,7 @@ function About() {
               
                 </h5>
             </div>
-            <div className='column-2'>
+            {/* <div className='column-2'>
                 <div className='dp-s4'></div>
                 <h2 className='names-us'>Sanket S Nargund</h2>
                 <h5>Student in VVCE(Mysore)
@@ -102,7 +102,7 @@ function About() {
                 email : sankets@gmail.com
                 
                 </h5>
-            </div>
+            </div> */}
         </div>
             </Container>
             

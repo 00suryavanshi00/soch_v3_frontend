@@ -23,6 +23,8 @@ import BearMen from './components/BearMen';
 import TYourself from './components/TYourself';
 import { StoryBuilder } from './pages/storybuilder';
 import CrocRab from './components/CrocRab';
+import ThirstCrow from './components/ThirstCrow';
+import Profile from './components/Profile';
 
 
 
@@ -39,12 +41,14 @@ function App() {
           <Route path="/abt" element={<About/>}/>
           <Route path="/try" element={<Try/>}/>
           <Route path="/kon1" element={<Konva/>}/>
+          <Route path="/konTC" element={<ThirstCrow/>}/>
           <Route path="/kon2" element={<TurtnRab/>}/>
           <Route path="/kon3" element={<CleverRab/>}/>
           <Route path="/kon4" element={<CrocRab/>}/>
           <Route path="/kon5" element={<TalkativeTur/>}/>
           <Route path="/kon6" element={<BearMen/>}/>
           <Route path="/storyBuilder" element={<StoryBuilder/>}/>
+          <Route path='/prof' element={<Profile/>}/>
           
         </Routes>
       </Router>

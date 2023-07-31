@@ -4,7 +4,7 @@ const trialcard = [
         name:"The Thirsty Crow",
         img:"https://as1.ftcdn.net/v2/jpg/04/70/44/76/1000_F_470447635_3Im2VV5grPzZwy8k7jVIqPRYaL1GMsl1.jpg",
         // description: "The Journey of a Crow in flying in the sky in search of Water, and how it uses its smartness to get the water out.",
-        link : "/kon1"
+        link : "/konTC"
 
     },
     {
@@ -36,6 +36,7 @@ const trialcard = [
         name:"The Talkative Turtle",
         img:"https://kathakids.com/static/story-images/2019/03/talkative_turtle-1536x819.jpg",
         // description: "The Journey of a Crow in flying in the sky in search of Water, and how it uses its smartness to get the water out."
+        link : "/kon5"
 
     },
     {
@@ -43,7 +44,7 @@ const trialcard = [
         name:"Bear and 3 Men",
         img:"https://www.wikihow.com/images/thumb/8/8f/Escape-from-a-Bear-Step-16.jpg/v4-460px-Escape-from-a-Bear-Step-16.jpg",
         // description: "The Journey of a Crow in flying in the sky in search of Water, and how it uses its smartness to get the water out."
-
+        link : "/kon6"
     }
 ];
 

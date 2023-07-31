@@ -10,7 +10,7 @@ export function DalleResult({ selectedOption , onImageSelect}) {
   let [selectedImageUrl, setSelectedImageUrl] = useState("");
 
   const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: "sk-Wazmyi6TCgtGhUDUd9B4T3BlbkFJbLqfakErvzGkm8mZY5lc",
   });
 
   const openai = new OpenAIApi(configuration);

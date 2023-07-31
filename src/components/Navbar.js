@@ -9,7 +9,7 @@ class Navbar extends Component {
   };
   render() {
     return (
-      <>
+      <div>
         <nav>
           <a className="logo" href="/">
             {/* <img src="./images/lgo.svg" />x */}
@@ -48,7 +48,7 @@ class Navbar extends Component {
             ></i>
           </div>
         </nav>
-      </>
+      </div>
     );
   }
 }

@@ -3,8 +3,11 @@ import { createRoot } from "react-dom/client";
 import { Stage, Layer, Image, Transformer } from "react-konva";
 import useImage from "use-image";
 import './Konva.css'
+import Navbar from './Navbar';
+import ThirstyC from './ThirstyC';
 import RecBut from './RecordingButtons';
-
+import { Link } from 'react-router-dom';
+// import { propTypes } from 'react-bootstrap/esm/Image';
 // import Canvas from './Canvas'
 // import SignaturePad from 'react-signature-canvas'
 
@@ -98,7 +101,7 @@ const URLImage = ({ image,shapeProps, isSelected,onSelect,onChange}) => {
   );
 };
 
-const CrocRab = () => {
+const ThirstCrow = () => {
   const dragUrl = React.useRef();
   const stageRef = React.useRef();
   const [images, setImages] = React.useState([]);
@@ -110,7 +113,7 @@ const CrocRab = () => {
     const uri = stageRef.current.toDataURL();
     console.log(uri);
     // we also can save uri as file
-    // but in the demo on TryA website it will not work
+    // but in the demo on Konva website it will not work
     // because of iframe restrictions
     // but feel free to use it in your apps:
     // downloadURI(uri, 'stage.png');
@@ -135,15 +138,18 @@ const CrocRab = () => {
 
 
   return (
+    
     <div>
+      {/* <Navbar/> */}
+      <h3 className='compname'>Components for Your 
+      Story</h3>
       
-      <h3 className='compname'>Components for Your Story</h3>
       <br />
 
             <img
             width={200}
-                alt="sky"
-                src="https://img.freepik.com/premium-photo/beautiful-cloudscape-with-blue-sky-fluffy-clouds-sunset_104337-7013.jpg"
+                alt={ThirstyC[0].alt1}
+                src={ThirstyC[0].img1}
                 draggable="true"
                 onDragStart={(e) => {
                 dragUrl.current = e.target.src;
@@ -153,8 +159,8 @@ const CrocRab = () => {
 
             <img
             width={200}
-                alt="crocodile"
-                src="https://media.giphy.com/media/51vn4sNNODpOD7GRlH/giphy.gif"
+                alt={ThirstyC[1].alt2}
+                src={ThirstyC[1].img2}
                 draggable="true"
                 onDragStart={(e) => {
                 dragUrl.current = e.target.src;
@@ -164,8 +170,8 @@ const CrocRab = () => {
         
             <img
             width={200}
-                alt="tree"
-                src="https://media.giphy.com/media/Me15dPbub4gXFVlrky/giphy.gif"
+                alt={ThirstyC[2].alt3}
+                src={ThirstyC[2].img3}
                 draggable="true"
                 onDragStart={(e) => {
                 dragUrl.current = e.target.src;
@@ -174,8 +180,8 @@ const CrocRab = () => {
 
             <img
             width={100}
-                alt="monkey"
-                src="https://media.giphy.com/media/SMy35IM1uiP59hm4Q0/giphy.gif"
+                alt={ThirstyC[3].alt4}
+                src={ThirstyC[3].img4}
                 draggable="true"
                 onDragStart={(e) => {
                 dragUrl.current = e.target.src;
@@ -184,8 +190,8 @@ const CrocRab = () => {
 
             <img
             width={200}
-                alt="banana"
-                src="https://freesvg.org/img/pitr_Bananas_icon_1.png"
+                alt={ThirstyC[4].alt5}
+                src={ThirstyC[4].img5}
                 draggable="true"
                 onDragStart={(e) => {
                 dragUrl.current = e.target.src;
@@ -194,14 +200,15 @@ const CrocRab = () => {
 
             <img
             width={200}
-                alt="river"
-                src="https://media.giphy.com/media/h7S09RdGSo9bXYCdKh/giphy.gif"
+                alt={ThirstyC[5].alt6}
+                src={ThirstyC[5].img6}
                 draggable="true"
                 onDragStart={(e) => {
                 dragUrl.current = e.target.src;
                 }}
             /> 
-            <p>There was a monkey and Crocodile, the crocodile asked the monkey to accompany him to his family to meet them, but ended up killing the monkey</p>
+
+            <p>{ThirstyC[6].para1}</p>
     
       <div
         onDrop={(e) => {
@@ -220,19 +227,24 @@ const CrocRab = () => {
         }}
         onDragOver={(e) => e.preventDefault()}
       >
-      
+        
         <Stage className='stage'
           height={600}
           width={880}
+          // width={window.innerWidth}
+          // height={window.innerHeight}
           onMouseDown={checkDeselect}
           onTouchStart={checkDeselect}
           style={{ border: "2px solid grey" }}
           ref={stageRef}
         >
+            
           <Layer>
             {images.map((image,i) => {
               return (
-                <URLImage
+                <div>
+                    
+                    <URLImage
                     key={i}
                     image={image} 
                     shapeProps={image}
@@ -247,13 +259,17 @@ const CrocRab = () => {
                     }}
 
                />
+                </div>
+                
               );
             })}
           </Layer>
         </Stage>
-        <RecBut/>
         {/* <button className='save-but' >Save</button> */}
-        <a className='save-but' href='try'>Save Your Imagination</a>
+        <RecBut/>
+        {/* <Navbar/> */}
+        <a className='save-but' href='try'>Save your Imagination</a>
+        
       </div>        
     </div>
 
@@ -274,9 +290,9 @@ const CrocRab = () => {
 //         false
 //       );
 const root = createRoot(container);
-root.render(<CrocRab />);
+root.render(<ThirstCrow />);
 
 
 
 
-export default CrocRab;
+export default ThirstCrow

@@ -4,6 +4,7 @@ import { Stage, Layer, Image, Transformer } from "react-konva";
 import useImage from "use-image";
 import './Konva.css'
 import RecBut from './RecordingButtons';
+// import Navbar from './Navbar';
 
 
 const URLImage = ({ image,shapeProps, isSelected,onSelect,onChange}) => {
@@ -124,7 +125,7 @@ const Konva = ({ propArray, selectedImage }) => {
   return (
     
     <div>
-
+      {/* <Navbar/> */}
       <h3 className='compname'>Components for Your 
       Story</h3>
       

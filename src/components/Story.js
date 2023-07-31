@@ -16,7 +16,7 @@ function Story() {
               <p class="card-text"><small class="text-body-secondary">The Journey of a Crow in flying in the sky in search of Water, and how it uses its smartness to get the water out.</small></p>
             </div>
             {/* <button className='see-but'>See Story</button> */}
-            <a className='see-but' href='kon1'>See Story</a>
+            <a className='see-but' href='konTC'>See Story</a>
           </div>
         </div>
     </div>

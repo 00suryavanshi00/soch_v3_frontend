@@ -1,4 +1,5 @@
 import "./Greeting.css";
+import Profile from "./Profile";
 
 function Greeting() {
     const date = new Date();
@@ -38,9 +39,11 @@ function Greeting() {
     return(
       <>
       <div className="greeting">
-        <a className="dp" href="index.html">
-            {/* <img src="./images/lgo.svg" />x */}
-          </a>
+        {/* <a className="dp" href="index.html"></a> */}
+
+        {/* add the Function to change the dp */}
+        <Profile/>
+          
           <h1 className="greet">{greeting}</h1>
           <a>
             <img className="weather" src={imageURL}/>

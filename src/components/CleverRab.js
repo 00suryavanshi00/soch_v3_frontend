@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { Stage, Layer, Image, Transformer } from "react-konva";
 import useImage from "use-image";
 import './Konva.css'
+import RecBut from './RecordingButtons';
 
 // import Canvas from './Canvas'
 // import SignaturePad from 'react-signature-canvas'
@@ -220,9 +221,9 @@ const CleverRab = () => {
         onDragOver={(e) => e.preventDefault()}
       >
       
-        <Stage
-          width={window.innerWidth}
-          height={window.innerHeight}
+        <Stage className='stage'
+          height={600}
+          width={880}
           onMouseDown={checkDeselect}
           onTouchStart={checkDeselect}
           style={{ border: "2px solid grey" }}
@@ -250,6 +251,7 @@ const CleverRab = () => {
             })}
           </Layer>
         </Stage>
+        <RecBut/>
         {/* <button className='save-but' >Save</button> */}
         <a className='save-but' href='try'>Save Your Imagination</a>
       </div>        

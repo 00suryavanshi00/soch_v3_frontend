@@ -57,6 +57,7 @@ export function GIPHY({ onSelectedStickersChange }){
         setSelectedStickers((prevStickers) => {
           const isStickerSelected = prevStickers.some((selected) => selected === sticker.images.fixed_height.url);
           if (isStickerSelected) {
+            // console.log(sticker.)
             // If sticker is already selected, remove it from the array
             const updatedStickers = prevStickers.filter((selected) => selected !== sticker.images.fixed_height.url);
             // Call the callback function with the updated array

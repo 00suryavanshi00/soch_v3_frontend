@@ -2,3 +2,50 @@
     height: 10%;
     width: 20%;
 }
+
+/* .inpbox{
+    border: 10px;
+    border-radius: 100px;
+    border-color: rgba(252, 166, 97, 1);
+} */
+
+.inbox{
+    background-color:#f8f3ed!important;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    padding: 18px 90px;
+    margin-left: 420px; 
+    /* border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    height: 20px;
+    line-height: 20px;
+    width: 200px; */
+    vertical-align: middle;
+    /* padding: 5px 10px 5px 10px !important; */
+    
+}
+#main_search {
+    float: right;
+    line-height: 60px;
+    margin: 0 50px 0 0;
+    
+    
+
+}
+
+.but{
+    /* display: flex;
+    justify-content: center;
+    align-self: center; */
+    font-size: 20px;
+    color:rgba(252, 166, 97, 1) ;
+    margin-left: 800px;
+    background-color: #FFF;
+    /* border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; */
+    /* height: 30px; */
+    /* padding: 5px; */
+    /* vertical-align: middle; */
+    margin-bottom: 40px;
+}

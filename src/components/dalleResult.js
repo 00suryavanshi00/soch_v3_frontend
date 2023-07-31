@@ -10,7 +10,7 @@ export function DalleResult({ selectedOption , onImageSelect}) {
   let [selectedImageUrl, setSelectedImageUrl] = useState("");
 
   const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: "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",
   });
 
   const openai = new OpenAIApi(configuration);
@@ -58,8 +58,12 @@ export function DalleResult({ selectedOption , onImageSelect}) {
                 onClick={() => handleImageClick(url)}
               />
             ))}
-          <InputBox placeholder="Search.." setAttribute={setUserPrompt} />
-          <button onClick={generateImages}>Generate</button>
+          <div id="main-search">
+              <InputBox className="inbox" placeholder="What's on your mind 🤔" setAttribute={setUserPrompt} />
+              <button className="but" onClick={generateImages}>Generate</button>
+
+          </div>
+          
         </main>
       )}
     </div>

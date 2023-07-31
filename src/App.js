@@ -15,13 +15,14 @@ import About from './land-components/About';
 import Dalle from './components/Dalle';
 // import Konva from 'konva';
 import Konva from './components/Konva';
-import TryA from './components/TryA';
+// import TryA from './components/TryA';
 import TurtnRab from './components/TurtnRab';
 import CleverRab from './components/CleverRab';
 import TalkativeTur from './components/TalkativeTur';
 import BearMen from './components/BearMen';
 import TYourself from './components/TYourself';
 import { StoryBuilder } from './pages/storybuilder';
+import CrocRab from './components/CrocRab';
 
 
 
@@ -40,7 +41,7 @@ function App() {
           <Route path="/kon1" element={<Konva/>}/>
           <Route path="/kon2" element={<TurtnRab/>}/>
           <Route path="/kon3" element={<CleverRab/>}/>
-          <Route path="/kon4" element={<TryA/>}/>
+          <Route path="/kon4" element={<CrocRab/>}/>
           <Route path="/kon5" element={<TalkativeTur/>}/>
           <Route path="/kon6" element={<BearMen/>}/>
           <Route path="/storyBuilder" element={<StoryBuilder/>}/>

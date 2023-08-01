@@ -20,11 +20,13 @@ import TurtnRab from './components/TurtnRab';
 import CleverRab from './components/CleverRab';
 import TalkativeTur from './components/TalkativeTur';
 import BearMen from './components/BearMen';
-import TYourself from './components/TYourself';
+import TYourself from './images/TYourself';
 import { StoryBuilder } from './pages/storybuilder';
 import CrocRab from './components/CrocRab';
 import ThirstCrow from './components/ThirstCrow';
 import Profile from './components/Profile';
+import CrowSerp from './components/CrowSerp';
+import AkbarBir from './components/AkbarBir';
 
 
 
@@ -32,6 +34,7 @@ function App() {
   return (
     <div className="App">
       {/* <Router> */}
+      
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path ="/land" element={<Land/>}/>
@@ -47,6 +50,8 @@ function App() {
           <Route path="/kon4" element={<CrocRab/>}/>
           <Route path="/kon5" element={<TalkativeTur/>}/>
           <Route path="/kon6" element={<BearMen/>}/>
+          <Route path="/kon7" element={<CrowSerp/>}/>
+          <Route path='/kon8' element={<AkbarBir/>}/>
           <Route path="/storyBuilder" element={<StoryBuilder/>}/>
           <Route path='/prof' element={<Profile/>}/>
           

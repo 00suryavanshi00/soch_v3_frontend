@@ -1,4 +1,38 @@
-.card-head{
-    /* margin-left: -690px */
-    
+.card-head1{
+    margin-left: -670px;
+    font-size:36px;
+}
+.card-head2{
+    margin-left: -560px;
+    font-size:36px;
+}
+
+.card-head3{
+    margin-left: -560px;
+    font-size:36px;
+}
+.card-head4{
+    margin-left: -490px;
+    font-size:36px;
+}
+
+.card-head5{
+    margin-left: -590px;
+    font-size:36px;
+}
+
+
+.card-head6{
+    margin-left: -590px;
+    font-size:36px;
+}
+
+.card-head7{
+    margin-left: -530px;
+    font-size:36px;
+}
+
+.card-head8{
+    margin-left: -640px;
+    font-size:36px;
 }

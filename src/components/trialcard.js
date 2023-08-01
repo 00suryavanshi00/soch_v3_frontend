@@ -45,6 +45,20 @@ const trialcard = [
         img:"https://www.wikihow.com/images/thumb/8/8f/Escape-from-a-Bear-Step-16.jpg/v4-460px-Escape-from-a-Bear-Step-16.jpg",
         // description: "The Journey of a Crow in flying in the sky in search of Water, and how it uses its smartness to get the water out."
         link : "/kon6"
+    },
+    {
+        id:7,
+        name:"Crow and the Serpent",
+        img:"https://www.kidsgen.com/moral_stories/images/the-crow-and-the-snake.jpg",
+        // description: "The Journey of a Crow in flying in the sky in search of Water, and how it uses its smartness to get the water out."
+        link : "/kon7"
+    },
+    {
+        id:8,
+        name:"Akbar and Birbal",
+        img:"https://i.pinimg.com/736x/c2/8b/d1/c28bd147b5b5cce11bc8928a276a74b2.jpg",
+        // description: "The Journey of a Crow in flying in the sky in search of Water, and how it uses its smartness to get the water out."
+        link : "/kon8"
     }
 ];
 

@@ -12,7 +12,7 @@ function Story() {
           <div class="col-md-8">
             <div class="card-body">
               {/* <h5 class="card-title">Card title</h5> */}
-              <h2 class="card-head">Thirsty Crow</h2>
+              <h2 class="card-head1">Thirsty Crow</h2>
               <p class="card-text"><small class="text-body-secondary">The Journey of a Crow in flying in the sky in search of Water, and how it uses its smartness to get the water out.</small></p>
             </div>
             {/* <button className='see-but'>See Story</button> */}
@@ -32,7 +32,7 @@ function Story() {
           <div class="col-md-8">
             <div class="card-body">
               {/* <h5 class="card-title">Card title</h5> */}
-              <h2 class="card-head">Turtle and Rabbit</h2>
+              <h2 class="card-head2">Turtle and Rabbit</h2>
               <p class="card-text"><small class="text-body-secondary">The Journey of a Crow in flying in the sky in search of Water, and how it uses its smartness to get the water out.</small></p>
             </div>
             {/* <button className='see-but'>See Story</button> */}
@@ -51,7 +51,7 @@ function Story() {
           <div class="col-md-8">
             <div class="card-body">
               {/* <h5 class="card-title">Card title</h5> */}
-              <h2 class="card-head">The Clever Rabbit</h2>
+              <h2 class="card-head3">The Clever Rabbit</h2>
               <p class="card-text"><small class="text-body-secondary">The Journey of a Crow in flying in the sky in search of Water, and how it uses its smartness to get the water out.</small></p>
             </div>
             {/* <button className='see-but'>See Story</button> */}
@@ -69,7 +69,7 @@ function Story() {
           <div class="col-md-8">
             <div class="card-body">
               {/* <h5 class="card-title">Card title</h5> */}
-              <h2 class="card-head">Monkey and Crocodile</h2>
+              <h2 class="card-head4">Monkey and Crocodile</h2>
               <p class="card-text"><small class="text-body-secondary">The Journey of a Crow in flying in the sky in search of Water, and how it uses its smartness to get the water out.</small></p>
             </div>
             {/* <button className='see-but'>See Story</button> */}
@@ -89,7 +89,7 @@ function Story() {
           <div class="col-md-8">
             <div class="card-body">
               {/* <h5 class="card-title">Card title</h5> */}
-              <h2 class="card-head">Talkative Turtle</h2>
+              <h2 class="card-head5">Talkative Turtle</h2>
               <p class="card-text"><small class="text-body-secondary">The Journey of a Crow in flying in the sky in search of Water, and how it uses its smartness to get the water out.</small></p>
             </div>
             {/* <button className='see-but'>See Story</button> */}
@@ -108,7 +108,7 @@ function Story() {
           <div class="col-md-8">
             <div class="card-body">
               {/* <h5 class="card-title">Card title</h5> */}
-              <h2 class="card-head">Bear and 3 Men</h2>
+              <h2 class="card-head6">Bear and 3 Men</h2>
               <p class="card-text"><small class="text-body-secondary">The Journey of a Crow in flying in the sky in search of Water, and how it uses its smartness to get the water out.</small></p>
             </div>
             {/* <button className='see-but'>See Story</button> */}
@@ -117,6 +117,40 @@ function Story() {
         </div>
     </div>
 
+     <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://www.kidsgen.com/moral_stories/images/the-crow-and-the-snake.jpg" class="img-fluid" alt="..."/>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              {/* <h5 class="card-title">Card title</h5> */}
+              <h2 class="card-head7">Crow and the Serpent</h2>
+              <p class="card-text"><small class="text-body-secondary">The story of Crows that protect their eggs from the hungry serpent.That's when crow went to Jackal and then Crow stole a necklace</small></p>
+            </div>
+            {/* <button className='see-but'>See Story</button> */}
+            <a className='see-but' href='kon7'>See Story</a>
+          </div>
+        </div>
+    </div>
+
+
+     <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://i.pinimg.com/736x/c2/8b/d1/c28bd147b5b5cce11bc8928a276a74b2.jpg" class="img-fluid" alt="..."/>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              {/* <h5 class="card-title">Card title</h5> */}
+              <h2 class="card-head8">Akbar and Birbal</h2>
+              <p class="card-text"><small class="text-body-secondary">Learn How Birbal solves problem of the farmer who once bought a well from a rich man to irrigate his farm. But then the merchent </small></p>
+            </div>
+            {/* <button className='see-but'>See Story</button> */}
+            <a className='see-but' href='kon8'>See Story</a>
+          </div>
+        </div>
+    </div>
 
 
 

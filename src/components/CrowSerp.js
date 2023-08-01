@@ -1,14 +1,12 @@
 import React from 'react'
 import { createRoot } from "react-dom/client";
 import { Stage, Layer, Image, Transformer } from "react-konva";
+import {BrowserRouter as Router} from 'react-router-dom';
 import useImage from "use-image";
 import './Konva.css'
 import Navbar from './Navbar';
-import ThirstyC from './ThirstyC';
-import {BrowserRouter as Router} from 'react-router-dom';
 import RecBut from './RecordingButtons';
-// import { Link } from 'react-router-dom';
-// import { propTypes } from 'react-bootstrap/esm/Image';
+
 // import Canvas from './Canvas'
 // import SignaturePad from 'react-signature-canvas'
 
@@ -53,7 +51,6 @@ const URLImage = ({ image,shapeProps, isSelected,onSelect,onChange}) => {
             ref={shapeRef}
             
             {...shapeProps}
-            draggable
             onDragEnd={(e) => {
                 onChange({
                     ...shapeProps,
@@ -102,7 +99,7 @@ const URLImage = ({ image,shapeProps, isSelected,onSelect,onChange}) => {
   );
 };
 
-const ThirstCrow = () => {
+const CrowSerp = () => {
   const dragUrl = React.useRef();
   const stageRef = React.useRef();
   const [images, setImages] = React.useState([]);
@@ -114,7 +111,7 @@ const ThirstCrow = () => {
     const uri = stageRef.current.toDataURL();
     console.log(uri);
     // we also can save uri as file
-    // but in the demo on Konva website it will not work
+    // but in the demo on TryA website it will not work
     // because of iframe restrictions
     // but feel free to use it in your apps:
     // downloadURI(uri, 'stage.png');
@@ -139,18 +136,15 @@ const ThirstCrow = () => {
 
 
   return (
-    <>
     <div>
       <Navbar/>
-      <h3 className='compname'>Components for Your 
-      Story</h3>
-      
+      <h3 className='compname'>Components for Your Story</h3>
       <br />
 
             <img
-            width={200}
-                alt={ThirstyC[0].alt1}
-                src={ThirstyC[0].img1}
+            width={120}
+                alt="Crows"
+                src="https://media.giphy.com/media/u2R5zbiw4V7niu7z1r/giphy.gif"
                 draggable="true"
                 onDragStart={(e) => {
                 dragUrl.current = e.target.src;
@@ -160,8 +154,8 @@ const ThirstCrow = () => {
 
             <img
             width={200}
-                alt={ThirstyC[1].alt2}
-                src={ThirstyC[1].img2}
+                alt="tree"
+                src="https://media.giphy.com/media/Me15dPbub4gXFVlrky/giphy.gif"
                 draggable="true"
                 onDragStart={(e) => {
                 dragUrl.current = e.target.src;
@@ -170,9 +164,9 @@ const ThirstCrow = () => {
         
         
             <img
-            width={200}
-                alt={ThirstyC[2].alt3}
-                src={ThirstyC[2].img3}
+            width={100}
+                alt="snake"
+                src="https://o.remove.bg/downloads/a1fb1474-fbd7-4cf9-8d62-e4e9dcb23758/png-transparent-snake-animation-cartoon-snake-animals-photography-fauna-removebg-preview.png"
                 draggable="true"
                 onDragStart={(e) => {
                 dragUrl.current = e.target.src;
@@ -181,8 +175,8 @@ const ThirstCrow = () => {
 
             <img
             width={100}
-                alt={ThirstyC[3].alt4}
-                src={ThirstyC[3].img4}
+                alt="eggs"
+                src="https://o.remove.bg/downloads/3228dfc0-0a7f-4ef3-b5ff-cdd886906ca6/eggs-bird-nest-tree-branch_1639-17467-removebg-preview.png"
                 draggable="true"
                 onDragStart={(e) => {
                 dragUrl.current = e.target.src;
@@ -191,8 +185,8 @@ const ThirstCrow = () => {
 
             <img
             width={200}
-                alt={ThirstyC[4].alt5}
-                src={ThirstyC[4].img5}
+                alt="necklace"
+                src="https://o.remove.bg/downloads/8cc8a3fd-be3f-495a-bcbe-8b9919c446fa/pngtree-cartoon-hand-drawn-valentine-illustration-necklace-image_1319336-removebg-preview.png"
                 draggable="true"
                 onDragStart={(e) => {
                 dragUrl.current = e.target.src;
@@ -201,15 +195,14 @@ const ThirstCrow = () => {
 
             <img
             width={200}
-                alt={ThirstyC[5].alt6}
-                src={ThirstyC[5].img6}
+                alt="Soldier"
+                src="https://o.remove.bg/downloads/d2483954-3d49-40fc-a8b6-c3183566c094/Soilder_Indian_Prv-removebg-preview.png"
                 draggable="true"
                 onDragStart={(e) => {
                 dragUrl.current = e.target.src;
                 }}
             /> 
-
-            <p>{ThirstyC[6].para1}</p>
+            <p>Once upon a time there lived a crow couple, who had built a nest on the top of a tree. But unfortunately the tree was inhabited by a serpent at its bottom. So the serpent used to crawl up the tree and eat all the eggs that the lady crow used to lay. The crow couple were deeply grieved and when this happened time after time, then they decided that the serpent was to be get rid of by a plan.</p>
     
       <div
         onDrop={(e) => {
@@ -232,17 +225,16 @@ const ThirstCrow = () => {
         <Stage className='stage'
           height={600}
           width={880}
-          // width={window.innerWidth}
-          // height={window.innerHeight}
           onMouseDown={checkDeselect}
           onTouchStart={checkDeselect}
           style={{ border: "2px solid grey" }}
           ref={stageRef}
         >
-            
           <Layer>
+            
             {images.map((image,i) => {
               return (
+                
                 <URLImage
                     key={i}
                     image={image} 
@@ -258,19 +250,17 @@ const ThirstCrow = () => {
                     }}
 
                />
-                
               );
             })}
           </Layer>
         </Stage>
-        {/* <button className='save-but' >Save</button> */}
         <RecBut/>
         {/* <Navbar/> */}
-        <a className='save-but' href='try'>Save your Imagination</a>
-        
+        {/* <button className='save-but' >Save</button> */}
+        <a className='save-but' href='try'>Save Your Imagination</a>
       </div>        
     </div>
-</>
+
   );
 };
 
@@ -289,12 +279,13 @@ const ThirstCrow = () => {
 //       );
 const root = createRoot(container);
 root.render(
-    <Router>
-        <ThirstCrow/>
-    </Router>
+  <Router>
+
+<CrowSerp />
+  </Router>
 );
 
 
 
 
-export default ThirstCrow
+export default CrowSerp;

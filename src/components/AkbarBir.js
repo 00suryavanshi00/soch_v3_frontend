@@ -1,14 +1,12 @@
 import React from 'react'
 import { createRoot } from "react-dom/client";
 import { Stage, Layer, Image, Transformer } from "react-konva";
+import {BrowserRouter as Router} from 'react-router-dom';
 import useImage from "use-image";
 import './Konva.css'
 import Navbar from './Navbar';
-import ThirstyC from './ThirstyC';
-import {BrowserRouter as Router} from 'react-router-dom';
 import RecBut from './RecordingButtons';
-// import { Link } from 'react-router-dom';
-// import { propTypes } from 'react-bootstrap/esm/Image';
+
 // import Canvas from './Canvas'
 // import SignaturePad from 'react-signature-canvas'
 
@@ -53,7 +51,6 @@ const URLImage = ({ image,shapeProps, isSelected,onSelect,onChange}) => {
             ref={shapeRef}
             
             {...shapeProps}
-            draggable
             onDragEnd={(e) => {
                 onChange({
                     ...shapeProps,
@@ -102,7 +99,7 @@ const URLImage = ({ image,shapeProps, isSelected,onSelect,onChange}) => {
   );
 };
 
-const ThirstCrow = () => {
+const AkbarBir = () => {
   const dragUrl = React.useRef();
   const stageRef = React.useRef();
   const [images, setImages] = React.useState([]);
@@ -114,7 +111,7 @@ const ThirstCrow = () => {
     const uri = stageRef.current.toDataURL();
     console.log(uri);
     // we also can save uri as file
-    // but in the demo on Konva website it will not work
+    // but in the demo on TryA website it will not work
     // because of iframe restrictions
     // but feel free to use it in your apps:
     // downloadURI(uri, 'stage.png');
@@ -139,18 +136,15 @@ const ThirstCrow = () => {
 
 
   return (
-    <>
     <div>
       <Navbar/>
-      <h3 className='compname'>Components for Your 
-      Story</h3>
-      
+      <h3 className='compname'>Components for Your Story</h3>
       <br />
 
             <img
-            width={200}
-                alt={ThirstyC[0].alt1}
-                src={ThirstyC[0].img1}
+            width={120}
+                alt="akbar"
+                src="https://o.remove.bg/downloads/c920b844-df72-40c1-8863-d596694021e3/king-akbar-with-a-sword-3217432-2688938-removebg-preview.png"
                 draggable="true"
                 onDragStart={(e) => {
                 dragUrl.current = e.target.src;
@@ -160,8 +154,8 @@ const ThirstCrow = () => {
 
             <img
             width={200}
-                alt={ThirstyC[1].alt2}
-                src={ThirstyC[1].img2}
+                alt="birbal"
+                src="https://o.remove.bg/downloads/f76c9144-a105-4b9e-8e41-05e401e17eb9/birbal-cartoon-character-vector-38299361-removebg-preview.png"
                 draggable="true"
                 onDragStart={(e) => {
                 dragUrl.current = e.target.src;
@@ -171,8 +165,8 @@ const ThirstCrow = () => {
         
             <img
             width={200}
-                alt={ThirstyC[2].alt3}
-                src={ThirstyC[2].img3}
+                alt="court"
+                src="https://c4.wallpaperflare.com/wallpaper/129/151/707/akbar-s-royal-bathing-chamber-delhi-india-wallpaper-preview.jpg"
                 draggable="true"
                 onDragStart={(e) => {
                 dragUrl.current = e.target.src;
@@ -181,8 +175,8 @@ const ThirstCrow = () => {
 
             <img
             width={100}
-                alt={ThirstyC[3].alt4}
-                src={ThirstyC[3].img4}
+                alt="well"
+                src="https://o.remove.bg/downloads/98927798-5dd1-468f-bb54-0348c08d894e/istockphoto-697267582-612x612-removebg-preview.png"
                 draggable="true"
                 onDragStart={(e) => {
                 dragUrl.current = e.target.src;
@@ -191,8 +185,8 @@ const ThirstCrow = () => {
 
             <img
             width={200}
-                alt={ThirstyC[4].alt5}
-                src={ThirstyC[4].img5}
+                alt="farmer"
+                src="https://o.remove.bg/downloads/2633cb9b-72c0-4b9a-a39f-4e86eed5e0b8/pngtree-cartoon-indian-farmer-png-image_3962670-removebg-preview.png"
                 draggable="true"
                 onDragStart={(e) => {
                 dragUrl.current = e.target.src;
@@ -201,15 +195,14 @@ const ThirstCrow = () => {
 
             <img
             width={200}
-                alt={ThirstyC[5].alt6}
-                src={ThirstyC[5].img6}
+                alt="merchent"
+                src="https://o.remove.bg/downloads/c5d18448-2ae6-4bcb-968a-0d300b1fe821/171146889-balloons-seller-is-standing-with-greet-hand-vector-graphic-illustration-individually-on-white-removebg-preview.png"
                 draggable="true"
                 onDragStart={(e) => {
                 dragUrl.current = e.target.src;
                 }}
             /> 
-
-            <p>{ThirstyC[6].para1}</p>
+            <p>Once a Farmer bought a well from a rich merchent to irrigate his farm, After paying for it, when he came the next day the merchent did not allow him to draw water as he said that he paid for the well not the water.</p>
     
       <div
         onDrop={(e) => {
@@ -232,17 +225,16 @@ const ThirstCrow = () => {
         <Stage className='stage'
           height={600}
           width={880}
-          // width={window.innerWidth}
-          // height={window.innerHeight}
           onMouseDown={checkDeselect}
           onTouchStart={checkDeselect}
           style={{ border: "2px solid grey" }}
           ref={stageRef}
         >
-            
           <Layer>
+            
             {images.map((image,i) => {
               return (
+                
                 <URLImage
                     key={i}
                     image={image} 
@@ -258,19 +250,17 @@ const ThirstCrow = () => {
                     }}
 
                />
-                
               );
             })}
           </Layer>
         </Stage>
-        {/* <button className='save-but' >Save</button> */}
         <RecBut/>
         {/* <Navbar/> */}
-        <a className='save-but' href='try'>Save your Imagination</a>
-        
+        {/* <button className='save-but' >Save</button> */}
+        <a className='save-but' href='try'>Save Your Imagination</a>
       </div>        
     </div>
-</>
+
   );
 };
 
@@ -289,12 +279,13 @@ const ThirstCrow = () => {
 //       );
 const root = createRoot(container);
 root.render(
-    <Router>
-        <ThirstCrow/>
-    </Router>
+  <Router>
+
+<AkbarBir />
+  </Router>
 );
 
 
 
 
-export default ThirstCrow
+export default AkbarBir;

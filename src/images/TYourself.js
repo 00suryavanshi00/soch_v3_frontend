@@ -1,7 +1,7 @@
 import React from 'react'
-import Dalle from './Dalle'
-import Navbar from './Navbar'
-import PythonStoT from './PythonStoT'
+import Dalle from '../components/Dalle'
+import Navbar from '../components/Navbar'
+import PythonStoT from '../components/PythonStoT'
 
 function TYourself() {
   return (

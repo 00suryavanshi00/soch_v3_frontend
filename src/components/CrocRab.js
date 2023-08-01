@@ -5,6 +5,7 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import useImage from "use-image";
 import './Konva.css'
 import Navbar from './Navbar';
+import RecBut from './RecordingButtons';
 
 // import Canvas from './Canvas'
 // import SignaturePad from 'react-signature-canvas'
